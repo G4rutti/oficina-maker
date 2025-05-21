@@ -3,9 +3,15 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Link from "next/link"
-import { Mountain } from "lucide-react"
+import { Mountain, Menu } from "lucide-react"
 import { Providers } from "./providers"
-import { NavLinks } from "../components/nav-links"
+import { Button } from "@/components/ui/button"
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import { NavLinks } from "@/components/nav-links"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -36,6 +42,23 @@ export default function RootLayout({
                   </Link>
                   <NavLinks />
                 </nav>
+                <div className="md:hidden">
+                  <Sheet>
+                    <SheetTrigger asChild>
+                      <Button variant="ghost" size="icon">
+                        <Menu className="h-6 w-6" />
+                      </Button>
+                    </SheetTrigger>
+                    <SheetContent>
+                      <nav className="flex flex-col space-y-4 mt-8">
+                        <Link href="/" className="text-gray-600 hover:text-blue-600">
+                          Home
+                        </Link>
+                        <NavLinks />
+                      </nav>
+                    </SheetContent>
+                  </Sheet>
+                </div>
               </div>
             </div>
           </header>
