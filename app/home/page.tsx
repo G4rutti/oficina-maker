@@ -13,7 +13,7 @@ export default function HomePage() {
             Oficinas práticas para estudantes do ensino médio aprenderem tecnologias emergentes de forma interativa e
             divertida.
           </p>
-          <Link href="/cursos">
+          <Link href="/login">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               Acessar os Cursos <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -153,7 +153,7 @@ export default function HomePage() {
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Acesse nossa plataforma de cursos e comece a explorar o mundo da tecnologia hoje mesmo!
           </p>
-          <Link href="/cursos">
+          <Link href="/login">
             <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-50">
               Acessar os Cursos <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

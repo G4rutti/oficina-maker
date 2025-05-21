@@ -4,7 +4,7 @@ export const cursos: Curso[] = [
   {
     id: "arduino-intro",
     titulo: "Introdução ao Arduino",
-    instrutor: "Iago de Oliveira",
+    instrutor: "Iago de Oliveira e Gabriel Lugli",
     categoria: "Eletrônica",
     nivel: "Iniciante",
     thumbnail: "/arduino.jpg?height=400&width=600",
